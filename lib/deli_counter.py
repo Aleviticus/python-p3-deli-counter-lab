@@ -14,7 +14,12 @@ def line(line_list):
     else:
         print ("The line is currently empty.")
 
-def take_a_number():
+def take_a_number(list, person):
+
+    x = len(list) + 1
+    list.append(person)
+
+    print(f"Welcome, {person}. You are number {x} in line.")
     pass
 
 def now_serving():
