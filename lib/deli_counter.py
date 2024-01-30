@@ -22,5 +22,9 @@ def take_a_number(list, person):
     print(f"Welcome, {person}. You are number {x} in line.")
     pass
 
-def now_serving():
-    pass
+def now_serving(queue):
+    if queue:
+        serving = queue.pop(0)
+        print("Currently serving", serving + ".")
+    else:
+        print("There is nobody waiting to be served!")
